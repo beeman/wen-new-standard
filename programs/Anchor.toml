@@ -11,7 +11,6 @@ wallet = "~/.config/solana/id.json"
 [workspace]
 members = [
   "wen_new_standard",
-  "wen_royalty_distribution",
 ]
 
 [programs.localnet]

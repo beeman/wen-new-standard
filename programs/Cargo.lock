@@ -2498,25 +2498,13 @@ dependencies = [
 
 [[package]]
 name = "wen_new_standard"
-version = "0.1.0-alpha"
+version = "0.3.2-alpha"
 dependencies = [
  "anchor-lang",
  "anchor-spl",
  "spl-pod",
  "spl-tlv-account-resolution 0.4.0",
  "spl-token-metadata-interface",
- "spl-transfer-hook-interface 0.5.1",
- "wen_royalty_distribution",
-]
-
-[[package]]
-name = "wen_royalty_distribution"
-version = "0.1.0-alpha"
-dependencies = [
- "anchor-lang",
- "anchor-spl",
- "spl-pod",
- "spl-tlv-account-resolution 0.4.0",
  "spl-transfer-hook-interface 0.5.1",
 ]
 

@@ -57,18 +57,7 @@ pub mod wen_new_standard {
         instructions::mint::group::add::handler(ctx)
     }
 
-    /// add royalties to mint
-    pub fn add_royalties(ctx: Context<AddRoyalties>, args: UpdateRoyaltiesArgs) -> Result<()> {
-        instructions::mint::royalties::add::handler(ctx, args)
-    }
 
-    /// modify royalties of mint
-    pub fn modify_royalties(
-        ctx: Context<ModifyRoyalties>,
-        args: UpdateRoyaltiesArgs,
-    ) -> Result<()> {
-        instructions::mint::royalties::modify::handler(ctx, args)
-    }
 
     /// add additional metadata to mint
     pub fn add_metadata(ctx: Context<AddMetadata>, args: Vec<AddMetadataArgs>) -> Result<()> {
@@ -98,15 +87,4 @@ pub mod wen_new_standard {
         instructions::mint::burn::handler(ctx)
     }
 
-    /// Royalty distribution + enforcement instructions
-    /// validate transfer
-    #[interface(spl_transfer_hook_interface::execute)]
-    pub fn execute(ctx: Context<ExecuteTransferHook>, _amount: u64) -> Result<()> {
-        instructions::royalty::execute::handler(ctx)
-    }
-
-    /// approve transfer
-    pub fn approve_transfer(ctx: Context<ApproveTransfer>, buy_amount: u64) -> Result<()> {
-        instructions::royalty::approve::handler(ctx, buy_amount)
-    }
 }

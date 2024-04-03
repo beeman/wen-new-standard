@@ -1,7 +1,6 @@
 [workspace]
 members = [
     "wen_new_standard",
-    "wen_royalty_distribution",
 ]
 resolver = "2"
 

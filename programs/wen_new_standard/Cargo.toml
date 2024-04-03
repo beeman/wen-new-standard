@@ -26,5 +26,4 @@ anchor-spl = { git = "https://github.com/bridgesplit/anchor.git", features = ["t
 spl-pod = "0.1.0"
 spl-transfer-hook-interface = { version = "0.5.0" }
 spl-tlv-account-resolution = "0.4.0"
-wen_royalty_distribution = { path = "../wen_royalty_distribution", features = ["cpi"] }
 spl-token-metadata-interface = "=0.2"
